@@ -114,3 +114,18 @@ npm run build
 npm run preview
 ```
 The application will be running at `http://127.0.0.1:3000/`.
+
+### Deploying to Vercel
+
+Import this repository into Vercel with the repository root as the Root Directory.
+The tracked `vercel.json` selects the Vite framework, runs `npm run build`, and
+publishes `dist`. Use `npm ci` if setting an explicit Install Command.
+
+This app uses client-side routing: React selects the page from the browser URL.
+The rewrite in `vercel.json` serves `index.html` for page URLs such as
+`/agents/james-carter`, allowing direct visits and refreshes to reach React instead
+of returning a Vercel 404. Existing static assets continue to be served normally.
+
+After deploying, verify the home page, open `/agents/james-carter` directly,
+refresh it, and open a profile from both the home page and `/agents` directory.
+The same rewrite also supports property and blog detail URLs.

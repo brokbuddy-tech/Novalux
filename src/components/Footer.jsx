@@ -247,7 +247,7 @@ export default function Footer({ onNavigate, onContactClick }) {
           </h1>
         </div>
 
-        {/* Bottom Bar: Legal Links & License */}
+        {/* Bottom Bar: Legal Links */}
         <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#71717A]">
           <div className="flex items-center gap-6">
             <button
@@ -264,14 +264,11 @@ export default function Footer({ onNavigate, onContactClick }) {
             </button>
           </div>
 
-          <div className="text-center sm:text-right font-light">
-            Licensed Real Estate Agent RS450078
-          </div>
         </div>
 
-        {/* Centered Attribution / Credit Line */}
+        {/* Copyright */}
         <div className="pt-6 text-center text-xs text-[#71717A]/90 font-normal">
-          © 2026 <span className="font-semibold text-white/90">Novalux Template</span> | Designed by <span className="font-semibold text-white/90">Sodiq Kareem</span> | Made in <span className="font-semibold text-white/90">Framer</span>
+          © 2026 <span className="font-semibold text-white/90">Novalux</span>
         </div>
 
       </div>

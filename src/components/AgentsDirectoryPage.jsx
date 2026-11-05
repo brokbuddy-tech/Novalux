@@ -55,7 +55,7 @@ export default function AgentsDirectoryPage({ onNavigate, onContactAgent }) {
 
   const handleAgentClick = (agent) => {
     if (onNavigate) {
-      onNavigate(`/agents/${agent.slug}`, agent);
+      onNavigate(`/agents/${agent.slug}`);
     } else {
       window.history.pushState({}, '', `/agents/${agent.slug}`);
       window.dispatchEvent(new PopStateEvent('popstate'));

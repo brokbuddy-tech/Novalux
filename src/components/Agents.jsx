@@ -28,7 +28,7 @@ export default function Agents({ onNavigate }) {
   const handleAgentClick = (agent) => {
     const targetRoute = `/agents/${agent.slug}`;
     if (onNavigate) {
-      onNavigate(targetRoute, agent);
+      onNavigate(targetRoute);
     } else {
       window.history.pushState({}, '', targetRoute);
       window.dispatchEvent(new PopStateEvent('popstate'));
